@@ -1,8 +1,11 @@
 $color1: #adeada;
 $color2: #f88f89;
+$color2hover: #e0736d;
 $color3: #cdeadc;
 $color4: #ddeadd;
+$color4hover: #c3cec3;
 $color5: #eec276;
+$color5hover: #cca664;
 $color6: #1f0e1a;
 $color7: #ff5d80;
 
@@ -50,13 +53,22 @@ body, html {
             border-bottom: 3px solid rgba($color6, 0.4);
             background-color: $color3;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            color: black;
-            text-align: right;
             padding: 20px 40px;
-            font-size: 2rem;
-            
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
             margin: 20px;
             margin-bottom: 0;
+
+            #resultado {
+                color: black;
+                text-align: right;
+                font-size: 2rem;
+                margin: 0;
+
+            }
         }
 
         #buttons-container {
@@ -71,13 +83,27 @@ body, html {
                 border: 0;
                 border-bottom: 3px solid rgba($color6, 0.4);
                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color4hover;
+                }
 
                 &:nth-child(1), &:nth-child(16) {
+                    font-weight: bold;
                     background-color: $color2;
+                    &:hover {
+                        background-color: $color2hover;
+                    }
                 }
 
                 &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(8), &:nth-child(12) {
                     background-color: $color5;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: $color5hover;
+                    }
                 }
 
                 &:nth-child(16) {

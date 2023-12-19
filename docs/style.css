@@ -38,12 +38,19 @@ body, html {
   border-bottom: 3px solid rgba(31, 14, 26, 0.4);
   background-color: #cdeadc;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  color: black;
-  text-align: right;
   padding: 20px 40px;
-  font-size: 2rem;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin: 20px;
   margin-bottom: 0;
+}
+#body #calculator-box #view #resultado {
+  color: black;
+  text-align: right;
+  font-size: 2rem;
+  margin: 0;
 }
 #body #calculator-box #buttons-container {
   display: grid;
@@ -57,12 +64,24 @@ body, html {
   border: 0;
   border-bottom: 3px solid rgba(31, 14, 26, 0.4);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+#body #calculator-box #buttons-container .button:hover {
+  background-color: #c3cec3;
 }
 #body #calculator-box #buttons-container .button:nth-child(1), #body #calculator-box #buttons-container .button:nth-child(16) {
+  font-weight: bold;
   background-color: #f88f89;
+}
+#body #calculator-box #buttons-container .button:nth-child(1):hover, #body #calculator-box #buttons-container .button:nth-child(16):hover {
+  background-color: #e0736d;
 }
 #body #calculator-box #buttons-container .button:nth-child(2), #body #calculator-box #buttons-container .button:nth-child(3), #body #calculator-box #buttons-container .button:nth-child(4), #body #calculator-box #buttons-container .button:nth-child(8), #body #calculator-box #buttons-container .button:nth-child(12) {
   background-color: #eec276;
+  font-weight: bold;
+}
+#body #calculator-box #buttons-container .button:nth-child(2):hover, #body #calculator-box #buttons-container .button:nth-child(3):hover, #body #calculator-box #buttons-container .button:nth-child(4):hover, #body #calculator-box #buttons-container .button:nth-child(8):hover, #body #calculator-box #buttons-container .button:nth-child(12):hover {
+  background-color: #cca664;
 }
 #body #calculator-box #buttons-container .button:nth-child(16) {
   grid-row: 4/6;
