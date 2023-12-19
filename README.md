@@ -4,4 +4,4 @@ A simple calculator using html, css and javascript.
 ## Use
 Open the GitHub Pages link below:
 
-´link´
+- [Rian's web calculator](https://rianreiss.github.io/web-calculator/)
