@@ -1,0 +1,51 @@
+@media screen and (min-width: 600px) {
+    /* Ajustes para tablets */
+    #body {
+        padding: 30px 30px;
+
+        #title {
+            height: fit-content;
+            font-size: 1.2rem;
+        }
+
+        #big-container {
+            padding: 10px;
+    
+            #container-title{
+                margin-top: 2.5%;
+                font-size: 2rem;
+            }
+    
+            #container {
+                padding: 18px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+/* Ajustes para desktops */
+    #body {
+        padding: 30px 30px;
+
+        #title {
+            font-size: 1.5rem;
+        }
+
+        #big-container {
+            padding: 10px;
+
+            #container-title{
+                margin-top: 2.5%;
+                font-size: 2.5rem;
+            }
+
+            #container {
+                padding: 18px;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}

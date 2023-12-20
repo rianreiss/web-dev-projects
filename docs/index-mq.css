@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+  /* Ajustes para tablets */
+  #body {
+    padding: 30px 30px;
+  }
+  #body #title {
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+  }
+  #body #big-container {
+    padding: 10px;
+  }
+  #body #big-container #container-title {
+    margin-top: 2.5%;
+    font-size: 2rem;
+  }
+  #body #big-container #container {
+    padding: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* Ajustes para desktops */
+  #body {
+    padding: 30px 30px;
+  }
+  #body #title {
+    font-size: 1.5rem;
+  }
+  #body #big-container {
+    padding: 10px;
+  }
+  #body #big-container #container-title {
+    margin-top: 2.5%;
+    font-size: 2.5rem;
+  }
+  #body #big-container #container {
+    padding: 18px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=index-mq.css.map */

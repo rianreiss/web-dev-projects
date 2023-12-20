@@ -3,54 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="calculator-fill.svg" sizes="any" type="image/svg+xml">
+    <title>Web-Dev Projects</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-mq.css">
+    <link rel="icon" href="assets/code-square.svg" sizes="any" type="image/svg+xml">
 
 </head>
 <body>
     <header id="header">
         <h1>
-            Web-Calculator
+            Web-Dev Projects
         </h1>
-
-        <p>
-            This is a simple project using HTML, CSS and JavaScript.
-        </p>
     </header>
 
     <div id="body">
 
-        <div id="calculator-box">
-
-            <div id="view">
-                <p id="resultado">
-                </p>
-
-            </div>
-
-            <div id="buttons-container">
-                <button class="button" onclick="clean()">C</button>
-                <button class="button" onclick="back()"><</button>
-                <button class="button" onclick="insert('*')">X</button>
-                <button class="button" onclick="insert('/')">/</button>
-                <button class="button" onclick="insert('7')">7</button>
-                <button class="button" onclick="insert('8')">8</button>
-                <button class="button" onclick="insert('9')">9</button>
-                <button class="button" onclick="insert('-')">-</button>
-                <button class="button" onclick="insert('4')">4</button>
-                <button class="button" onclick="insert('5')">5</button>
-                <button class="button" onclick="insert('6')">6</button>
-                <button class="button" onclick="insert('+')">+</button>
-                <button class="button" onclick="insert('1')">1</button>
-                <button class="button" onclick="insert('2')">2</button>
-                <button class="button" onclick="insert('3')">3</button>
-                <button class="button" onclick="calcular()">=</button>
-                <button class="button" onclick="insert('0')">0</button>
-                <button class="button" onclick="insert('.')">.</button>
-            </div>
-
+        <div id="title">
+            <p>This is a simple project using HTML, CSS and JavaScript.</p>
         </div>
+
+        <div id="big-container">
+            <div id="container-title">Select a project</div>
+            <div id="container">
+                <div class="project">
+                    <a href="">
+                        <img src="assets/calculator-fill.svg" alt="">
+                        <p>Calculator</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="assets/calendar-heart-fill.svg" alt="">
+                        <p>Date Invite</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="assets/question-square-fill.svg" alt="">
+                        <p>Guess the Number</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
 
     </div>
 
@@ -64,6 +60,6 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
