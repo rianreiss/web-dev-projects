@@ -19,7 +19,7 @@ $color10: #5cceee;
 }
 
 body {
-    min-width: 320px;
+    min-width: 400px;
 }
 
 body, html {
@@ -32,7 +32,8 @@ body, html {
 
 #header {
     border-bottom: 2px solid blue;
-    height: 15vh;
+    min-height: 100px;
+    max-height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,14 +42,26 @@ body, html {
 
 #body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex: 1;
     background-color: $color7;
+
+    padding: 20px;
+
+    #title {
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        height: 71px;
+        margin: 20px 0px;
+    }
+
 
     #calculator-box {
         display: flex;
         flex-direction: column;
+        margin: auto;
         background-color: $color1;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

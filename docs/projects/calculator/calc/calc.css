@@ -4,7 +4,7 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: 400px;
 }
 
 body, html {
@@ -17,7 +17,8 @@ body, html {
 
 #header {
   border-bottom: 2px solid blue;
-  height: 15vh;
+  min-height: 100px;
+  max-height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,14 +27,23 @@ body, html {
 
 #body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex: 1;
   background-color: #ff5d80;
+  padding: 20px;
+}
+#body #title {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  height: 71px;
+  margin: 20px 0px;
 }
 #body #calculator-box {
   display: flex;
   flex-direction: column;
+  margin: auto;
   background-color: #adeada;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -102,4 +112,4 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=calc.css.map */

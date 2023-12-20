@@ -31,12 +31,18 @@
     padding: 10px;
   }
   #body #big-container #container-title {
-    margin-top: 2.5%;
+    margin-top: 20px;
     font-size: 2.5rem;
+    padding-bottom: 15px;
   }
   #body #big-container #container {
-    padding: 18px;
+    padding: 18px 70px;
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #body #big-container #container {
+    padding: 18px 120px;
   }
 }/*# sourceMappingURL=index-mq.css.map */

@@ -1,0 +1,20 @@
+@media screen and (min-width: 600px) {
+  #body #title {
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #body #title {
+    font-size: 1.4rem;
+    margin: 5px 0px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #body #title {
+    font-size: 1.8rem;
+    margin: 0px;
+  }
+}/*# sourceMappingURL=calc-mq.css.map */
