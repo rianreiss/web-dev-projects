@@ -1,0 +1,84 @@
+$color1: #adeada;
+$color2: #f88f89;
+$color2hover: #e0736d;
+$color3: #cdeadc;
+$color4: #ddeadd;
+$color4hover: #c3cec3;
+$color5: #eec276;
+$color5hover: #cca664;
+$color6: #1f0e1a;
+$color7: #ff5d80;
+$color7hover: #f14e71;
+
+$color8: #cacaca;
+$color9: #24c0eb;
+$color10: #5cceee;
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    border: 1px solid $color10;
+    box-sizing: border-box;
+
+}
+
+#body {
+    height: 92vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    gap: 3%;
+
+    padding-bottom: 15vh;
+
+    img {
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        border-bottom: 3px solid $color1;
+        
+    }
+
+    div {
+
+        button {
+            margin: 0px 10px;
+            font-size: 1.5em;
+            padding: 5px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+
+            background-color: $color1;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            &:hover {
+                background-color: $color1;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.35) 0px 5px 15px;                
+
+            }
+
+        }
+    }
+
+    
+}
