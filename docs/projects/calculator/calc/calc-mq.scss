@@ -1,3 +1,19 @@
+$color1: #adeada;
+$color2: #f88f89;
+$color2hover: #e0736d;
+$color3: #cdeadc;
+$color4: #ddeadd;
+$color4hover: #c3cec3;
+$color5: #eec276;
+$color5hover: #cca664;
+$color6: #1f0e1a;
+$color7: #ff5d80;
+
+$color8: #cacaca;
+$color9: #24c0eb;
+$color10: #5cceee;
+
+
 @media screen and (min-width: 600px) {
     #body {
         #title {
@@ -5,6 +21,72 @@
             font-size: 1.2rem;
             margin: 10px 0px;
         }
+    }
+}
+
+@media screen and (max-height: 850px) {
+    #header {
+        border-bottom: 2px solid blue;
+        min-height: 50px;
+        max-height: 5vh;
+    }
+
+    #body {
+        #title {
+            p {
+                font-size: 0.8em;
+                margin: 0;
+            }
+            text-align: center;
+            color: black;
+            height: fit-content;
+            margin: 10px 0px;
+        }
+
+        #calculator-box {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            background-color: $color1;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+            #view {
+                border-bottom: 2px solid rgba($color6, 0.4);
+                padding: 10px 20px;
+                height: 25px;
+
+                margin: 20px;
+                margin-bottom: 0;
+    
+                #resultado {
+                    font-size: 1.6rem;
+                }
+            }
+    
+            #buttons-container {
+                display: grid;
+                grid-template-columns: repeat(4, 55px);
+                grid-template-rows: repeat(5, 45px);
+                gap: .5em;
+                margin: 20px;
+    
+                .button {
+                    border-bottom: 2px solid rgba($color6, 0.4);
+                    font-size: 0.85rem;
+                }
+    
+            }
+        }
+    }
+
+    #footer {
+        border-top: 2px solid blue;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

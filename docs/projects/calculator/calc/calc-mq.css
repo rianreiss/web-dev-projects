@@ -6,6 +6,61 @@
     margin: 10px 0px;
   }
 }
+@media screen and (max-height: 850px) {
+  #header {
+    border-bottom: 2px solid blue;
+    min-height: 50px;
+    max-height: 5vh;
+  }
+  #body #title {
+    text-align: center;
+    color: black;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 10px 0px;
+  }
+  #body #title p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  #body #calculator-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #adeada;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #body #calculator-box #view {
+    border-bottom: 2px solid rgba(31, 14, 26, 0.4);
+    padding: 10px 20px;
+    height: 25px;
+    margin: 20px;
+    margin-bottom: 0;
+  }
+  #body #calculator-box #view #resultado {
+    font-size: 1.6rem;
+  }
+  #body #calculator-box #buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 55px);
+    grid-template-rows: repeat(5, 45px);
+    gap: 0.5em;
+    margin: 20px;
+  }
+  #body #calculator-box #buttons-container .button {
+    border-bottom: 2px solid rgba(31, 14, 26, 0.4);
+    font-size: 0.85rem;
+  }
+  #footer {
+    border-top: 2px solid blue;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   #body #title {
     font-size: 1.4rem;
