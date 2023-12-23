@@ -5,6 +5,9 @@ Use it by clicking the **GitHub Pages link** below.
 
 - [Web-Dev Projects](https://rianreiss.github.io/web-dev-projects/)
 
+- <a href="https://rianreiss.github.io/web-dev-projects/" target="_blank">Web-Dev Projects</a>
+
+
 
 ## Calculator (_[link](https://rianreiss.github.io/web-dev-projects/projects/calculator/index.html){:target="_blank"}_)
 A simple math operations calculator.
