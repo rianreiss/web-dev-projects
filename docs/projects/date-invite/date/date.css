@@ -36,6 +36,14 @@ body, html {
   font-size: 3rem;
   border-bottom: 3px solid #adeada;
 }
+#body div {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+#body div:nth-child(1) {
+  left: 0;
+}
 #body div button {
   margin: 0px 10px;
   font-size: 1.5em;

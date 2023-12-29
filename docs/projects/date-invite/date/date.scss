@@ -59,6 +59,12 @@ body, html {
     }
 
     div {
+        width: 210px;
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(1) {
+            left: 0;
+        }
 
         button {
             margin: 0px 10px;
