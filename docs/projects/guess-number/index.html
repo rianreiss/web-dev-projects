@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date Invite</title>
+    <title>Guess the Number</title>
     <link rel="stylesheet" href="guess/guess.css">
     <link rel="stylesheet" href="guess/guess-mq.css">
     <link rel="icon" href="guess/question-square-fill.svg" sizes="any" type="image/svg+xml">
@@ -21,24 +21,28 @@
 
     <div id="body">
 
-        <div>
-
-            <div>
-                <p>Adivinhe o número de 1 a </p>
-                <select name="100" id="range">
+        <div id="container">
+            <div id="settings">
+                Guess the number between 1 to &nbsp
+                <select id="range">
+                    <option value="0">select</option>
                     <option value="100">100</option>
                     <option value="1000">1000</option>
                 </select>
             </div>
-            <div>
+            <div id="info">
+
+                <button id="start" onclick="start()">Start</button>
+            </div>
+            <div id="game">
                 <input type="text" id="input" placeholder="Num">
                 <button id="btn">Guess</button>
-
-                <p>Guesses: 0</p>
-
+    
+                <p id="guesses">Guesses: 0</p>
+    
             </div>
             <div>
-                <button>Refresh</button>
+                <button id="reset" onclick="resetarPagina()">Reset</button>
             </div>
         </div>
 
