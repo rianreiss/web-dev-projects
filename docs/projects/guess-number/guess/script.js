@@ -1,6 +1,6 @@
 let btn = document.getElementById('btn');
-let output = document.getElementById('info');
 let gameDisplay = document.getElementById('game');
+let output = document.getElementById('info');
 let settings = document.getElementById('settings');
 let number;
 
@@ -25,6 +25,9 @@ function start() {
         document.getElementById('start').style.display = 'none';
         settings.textContent = `You're guessing a number in range 1 to ${selectedValue}`;
         range.style.display = 'none';
+
+        
+        output.innerHTML = 'Can you guess it?';
         
         gameDisplay.style.display = 'grid';
 
@@ -40,62 +43,54 @@ function getRange () {
     console.log(number);
 };
 
-/*
-range.addEventListener('change', function() {
-    number = getRange();
-    return number;
+
+let resetBtn = document.getElementById('reset');
+
+document.addEventListener('keydown', function(event) {
+    // Verifica se a tecla pressionada é um número de 0 a 9
+    if (event.key == 'Enter') {
+        btn.click();
+    }
 });
-*/
 
 btn.addEventListener('click', function() {
 
-    let input = document.getElementById('input').value;
+    let inputV = document.getElementById('input').value;
 
-    if (isNaN(input)){
+    if (isNaN(inputV)){
         alert('Please, insert a valid number.');
+        limparInput(inputV);
 
-    } else if (input < 1 || input > selectedValue) {
+    } else if (inputV < 1 || inputV > selectedValue) {
         alert(`Please, insert a number in range 1 to ${selectedValue}.`);
+        limparInput(inputV);
 
     } else {
         attemps++;
-        if (input == number) {
-            alert('you won.');
-            console.log(attemps);
-        } else if (input < number) {
-            alert('your guessing was lower than the number.');
+        if (inputV == number) {
+            output.innerHTML = `You won!! (${number})`;
+            input.select();
+            btn.disabled = true;
+        } else if (inputV < number) {
+            output.innerHTML = 'Higher than that.';
+            limparInput(inputV);
         } else {
-            alert('your guessing was higher than the number.');
+            output.innerHTML = 'Lower than that.';
+            limparInput(inputV);
         }
+        let guesses = document.getElementById('guesses');
+        guesses.innerHTML = `Guesses: ${attemps}`;
     }
 });
+
+function limparInput(newHolder) {
+    let input = document.getElementById('input');
+    input.value = "";
+    input.focus();
+    input.placeholder = `Last: ${newHolder}`;
+}
 
 function resetarPagina() {
     location.reload();
 };
 
-/*
-while(running) {
-
-    btn.addEventListener('click', function() {
-
-        window.alert('teste');
-        let input = document.getElementById('input').value;
-
-        if (isNaN(input)){
-            alert('Please, insert a valid number.');
-        } else if (input < 1 || input > selectedValue) {
-            alert(`Please, insert a number in range 1 to ${selectedValue}.`);
-        } else {
-            attemps++;
-            if (input == number) {
-                alert('you won.');
-            } else if (input < number) {
-                alert('your guessing was lower than the number.');
-            } else {
-                alert('your guessing was higher than the number.');
-            }
-        }
-    });
-}
-*/
