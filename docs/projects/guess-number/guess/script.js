@@ -73,7 +73,7 @@ btn.addEventListener('click', function() {
     } else {
         attemps++;
         if (inputV == number) {
-            output.innerHTML = `You won!! (${number})<br>${numeros}`;
+            output.innerHTML = `You won!! (${number})`;
             input.select();
             numeros = [];
             btn.disabled = true;    
