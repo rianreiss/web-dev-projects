@@ -53,29 +53,37 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+var numeros = [];
+
 btn.addEventListener('click', function() {
 
     let inputV = document.getElementById('input').value;
 
     if (isNaN(inputV)){
-        alert('Please, insert a valid number.');
+        output.innerHTML = `Please, insert a valid number.`;
         limparInput(inputV);
 
     } else if (inputV < 1 || inputV > selectedValue) {
-        alert(`Please, insert a number in range 1 to ${selectedValue}.`);
+        output.innerHTML = `Please, insert a number in range 1 to ${selectedValue}.`;
         limparInput(inputV);
 
+    } else if (numeros.includes(inputV)) {
+        output.innerHTML = `You already guessed that number.`;
+        limparInput(inputV);
     } else {
         attemps++;
         if (inputV == number) {
-            output.innerHTML = `You won!! (${number})`;
+            output.innerHTML = `You won!! (${number})<br>${numeros}`;
             input.select();
-            btn.disabled = true;
+            numeros = [];
+            btn.disabled = true;    
         } else if (inputV < number) {
             output.innerHTML = 'Higher than that.';
+            numeros.push(inputV);
             limparInput(inputV);
         } else {
             output.innerHTML = 'Lower than that.';
+            numeros.push(inputV);
             limparInput(inputV);
         }
         let guesses = document.getElementById('guesses');
