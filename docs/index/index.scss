@@ -4,11 +4,20 @@ $color2hover: #e0736d;
 $color3: #cdeadc;
 $color4: #ddeadd;
 $color4hover: #c3cec3;
+$color11: #fcf7c5;
+$textLight: #fffef2;
+$textLightPlaceHolder: #c7c7c7;
+$color20: #1ae0dd;
+$color20hover: #13747d;
+$color30: #ff6c7d;
+$color30hover: #ec4457;
+$color40: #29221f;
+$color40hover: #463934;
 $color5: #eec276;
 $color5hover: #cca664;
 $color6: #1f0e1a;
 $color7: #ff5d80;
-$color7hover: #f14e71;
+$color7hover: #ff5d80;
 
 $color8: #cacaca;
 $color9: #24c0eb;
@@ -29,16 +38,19 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: $color40;
 }
 
 #header {
-    border-bottom: 2px solid blue;
-    min-height: 100px;
-    max-height: 15vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    border: 1px solid $color10;
+    box-sizing: border-box;
+    color: $textLight;
+
 }
 
 #body {
@@ -46,14 +58,15 @@ body, html {
     align-items: center;
     flex-direction: column;
     flex: 1;
-    background-color: $color7;
 
     padding: 60px 30px;
+    padding-bottom: 10vh;
 
     #title {
         font-size: 1rem;
         text-align: center;
-        color: white;
+        color: $textLight;
+        font-weight: bold;
         height: 71px;
     }
 
@@ -72,7 +85,7 @@ body, html {
             display: flex;
             justify-content: center;
             width: 100%;
-            border-bottom: 2px solid $color1;
+            border-bottom: 2px solid $color30hover;
             color: white;
             font-weight: bold;
             font-size: 1.2rem;
@@ -89,7 +102,7 @@ body, html {
             align-items: center;
 
             .project {
-                border: 1px solid white;
+                border: 1px solid $color30hover;
                 border-radius: 15px;
                 width: 200px;
                 height: 230px;
@@ -98,11 +111,11 @@ body, html {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                box-shadow: rgba($color1, 0.2) 0px 7px 29px 0px;
+                box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
 
                 &:hover {
-                    background-color: $color7hover;
-                    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 20px;
+                    background-color: $color40hover;
+                    box-shadow: rgba($color30, 0.4) 0px 5px 20px;
                 }
 
                 a {
@@ -117,6 +130,7 @@ body, html {
 
                     img {
                         width: 125px;
+                        fill: $color40;
                     }
     
                     p {
@@ -132,14 +146,4 @@ body, html {
     }
 
 
-}
-
-
-#footer {
-    border-top: 2px solid blue;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }

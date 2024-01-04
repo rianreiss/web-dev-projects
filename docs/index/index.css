@@ -13,16 +13,18 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #29221f;
 }
 
 #header {
-  border-bottom: 2px solid blue;
-  min-height: 100px;
-  max-height: 15vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  border: 1px solid #5cceee;
+  box-sizing: border-box;
+  color: #fffef2;
 }
 
 #body {
@@ -30,13 +32,14 @@ body, html {
   align-items: center;
   flex-direction: column;
   flex: 1;
-  background-color: #ff5d80;
   padding: 60px 30px;
+  padding-bottom: 10vh;
 }
 #body #title {
   font-size: 1rem;
   text-align: center;
-  color: white;
+  color: #fffef2;
+  font-weight: bold;
   height: 71px;
 }
 #body #big-container {
@@ -54,7 +57,7 @@ body, html {
   display: flex;
   justify-content: center;
   width: 100%;
-  border-bottom: 2px solid #adeada;
+  border-bottom: 2px solid #ec4457;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -70,7 +73,7 @@ body, html {
   align-items: center;
 }
 #body #big-container #container .project {
-  border: 1px solid white;
+  border: 1px solid #ec4457;
   border-radius: 15px;
   width: 200px;
   height: 230px;
@@ -79,11 +82,11 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(173, 234, 218, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
 }
 #body #big-container #container .project:hover {
-  background-color: #f14e71;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 20px;
+  background-color: #463934;
+  box-shadow: rgba(255, 108, 125, 0.4) 0px 5px 20px;
 }
 #body #big-container #container .project a {
   width: 100%;
@@ -97,18 +100,10 @@ body, html {
 }
 #body #big-container #container .project a img {
   width: 125px;
+  fill: #29221f;
 }
 #body #big-container #container .project a p {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-#footer {
-  border-top: 2px solid blue;
-  height: 15vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=index.css.map */
