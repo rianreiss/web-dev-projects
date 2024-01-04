@@ -32,7 +32,8 @@ body {
     min-width: 400px;
 }
 
-body, html {
+body,
+html {
     box-sizing: border-box;
     margin: 0;
     height: 100%;
@@ -50,6 +51,54 @@ body, html {
     border: 1px solid $color10;
     box-sizing: border-box;
     color: $textLight;
+
+    #nav {
+        position: relative;
+        text-align: right;
+
+        ul {
+            right: 0;
+            border: 1px solid $color30hover;
+            background-color: $color40;
+            border-radius: 15px;
+            width: 170px;
+            padding: 20px;
+            box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
+            list-style: none;
+            position: absolute;
+
+            li {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: inherit;
+                    border-radius: 6px;
+                    padding: 10px 5px;
+
+                    &:hover {
+                        background-color: $color40hover;
+                        font-weight: bold;
+                        box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
+                    }
+                }
+
+                border-bottom: 2px solid #13747d;
+                display: block;
+                margin-bottom: 15px;
+                list-style: none;
+                color: inherit;
+
+                &:hover {
+                    border-bottom: none;
+                }
+
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 
 }
 
@@ -79,7 +128,7 @@ body, html {
         align-items: center;
         padding: 20px;
 
-        #container-title{
+        #container-title {
             margin-top: 5%;
             padding-bottom: 2%;
             display: flex;
@@ -104,6 +153,7 @@ body, html {
             .project {
                 border: 1px solid $color30hover;
                 border-radius: 15px;
+                box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
                 width: 200px;
                 height: 230px;
                 margin: 10px;
@@ -111,7 +161,6 @@ body, html {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
 
                 &:hover {
                     background-color: $color40hover;
@@ -132,7 +181,7 @@ body, html {
                         width: 125px;
                         fill: $color40;
                     }
-    
+
                     p {
                         color: white;
                         font-weight: bold;

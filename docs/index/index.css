@@ -7,7 +7,8 @@ body {
   min-width: 400px;
 }
 
-body, html {
+body,
+html {
   box-sizing: border-box;
   margin: 0;
   height: 100%;
@@ -25,6 +26,46 @@ body, html {
   border: 1px solid #5cceee;
   box-sizing: border-box;
   color: #fffef2;
+}
+#header #nav {
+  position: relative;
+  text-align: right;
+}
+#header #nav ul {
+  right: 0;
+  border: 1px solid #ec4457;
+  background-color: #29221f;
+  border-radius: 15px;
+  width: 170px;
+  padding: 20px;
+  box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
+  list-style: none;
+  position: absolute;
+}
+#header #nav ul li {
+  border-bottom: 2px solid #13747d;
+  display: block;
+  margin-bottom: 15px;
+  list-style: none;
+  color: inherit;
+}
+#header #nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+  padding: 10px 5px;
+}
+#header #nav ul li a:hover {
+  background-color: #463934;
+  font-weight: bold;
+  box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
+}
+#header #nav ul li:hover {
+  border-bottom: none;
+}
+#header #nav ul li:last-child {
+  margin-bottom: 0;
 }
 
 #body {
@@ -75,6 +116,7 @@ body, html {
 #body #big-container #container .project {
   border: 1px solid #ec4457;
   border-radius: 15px;
+  box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
   width: 200px;
   height: 230px;
   margin: 10px;
@@ -82,7 +124,6 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
 }
 #body #big-container #container .project:hover {
   background-color: #463934;
