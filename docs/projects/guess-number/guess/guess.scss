@@ -1,8 +1,11 @@
-$color1: #adeada;
-$color2: #f88f89;
-$color2hover: #e0736d;
-$color3: #cdeadc;
-$color4: #ddeadd;
+$color1: #fcf7c5;
+$textLight: #fffef2;
+$textLightPlaceHolder: #c7c7c7;
+$color2: #1ae0dd;
+$color2hover: #13747d;
+$color3: #fc354c;
+$color3hover: #b11e2f;
+$color4: #29221f;
 $color4hover: #c3cec3;
 $color5: #eec276;
 $color5hover: #cca664;
@@ -23,6 +26,8 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-width: 450px;;
+    background-color: $color1;
 
 }
 
@@ -41,6 +46,22 @@ p {
     margin: 0;
 }
 
+.button {
+    background-color: $color3;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: $textLight;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 16px 20px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $color3hover;
+    }
+}
+
 #body {
     height: 92vh;
     box-sizing: border-box;
@@ -51,45 +72,64 @@ p {
     padding-bottom: 18vh;
 
     #container {
-        width: 350px;
+        width: 400px;
         height: 400px;
-        padding: 40px;
+        padding: 30px 10px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+        font-weight: bold;
+        
+        background-color: $color2;
 
-        border: 3px solid rgb(165, 165, 165);
+        border: 3px solid $color2hover;
+        border-radius: 15px;
 
         #settings {
             display: flex;
             align-items: center;
             position: relative;
-            border: 1px solid blue;
+            gap: 15px;
+            padding-bottom: 10px;
+            
 
             select {
                 font-size: 1rem;
                 cursor: pointer;
-                border: 1px solid rgb(165, 165, 165);
             }
 
         }
+
+        #info {
+        }
+
 
         #game {
             display: none;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(2, auto);
-            gap: 35px 15px;
+            gap: 70px 35px;
             align-items: center;
 
             #input {
-                width: 60px;
-                height: 30px;
+                background-color: $color4;
+                color: $textLight;
+                
+                border: none;
+                border-bottom: 3px solid $color3;
+                width: 70px;
+                height: 35px;
                 padding: 0px 10px;
+                font-size: 1em;
+
+                &::placeholder {
+                    color: $textLightPlaceHolder;
+                }
             }
 
             #btn {
-                height: 40px;
+                font-size: 1.2em;
             }
 
             * {
@@ -106,8 +146,10 @@ p {
                 width: 100%;
                 display: flex;
                 justify-content: end;
+
                 button {
                     display: none;
+                    font-size: 1.2em;
                 }
             }
         }

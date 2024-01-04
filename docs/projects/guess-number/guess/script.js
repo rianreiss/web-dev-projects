@@ -25,6 +25,7 @@ function start() {
         document.getElementById('start').style.display = 'none';
         settings.textContent = `You're guessing a number in range 1 to ${selectedValue}`;
         range.style.display = 'none';
+        settings.style.borderBottom = '3px solid ' + '#fc354c';
 
         
         output.innerHTML = 'Can you guess it?';
@@ -60,15 +61,15 @@ btn.addEventListener('click', function() {
     let inputV = document.getElementById('input').value;
 
     if (isNaN(inputV)){
-        output.innerHTML = `Please, insert a valid number.`;
+        alert(`Please, insert a valid number.`);
         limparInput(inputV);
 
     } else if (inputV < 1 || inputV > selectedValue) {
-        output.innerHTML = `Please, insert a number in range 1 to ${selectedValue}.`;
+        alert(`Please, insert a number in range 1 to ${selectedValue}.`);
         limparInput(inputV);
 
     } else if (numeros.includes(inputV)) {
-        output.innerHTML = `You already guessed that number.`;
+        alert(`You already guessed that number.`);
         limparInput(inputV);
     } else {
         attemps++;
