@@ -62,7 +62,7 @@ html {
   box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
 }
 #header #nav ul li:hover {
-  border-bottom: none;
+  border-bottom: 2px solid transparent;
 }
 #header #nav ul li:last-child {
   margin-bottom: 0;
