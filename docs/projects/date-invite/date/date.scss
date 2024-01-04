@@ -1,9 +1,11 @@
-$color1: #adeada;
-$color2: #f88f89;
-$color2hover: #e0736d;
-$color3: #cdeadc;
-$color4: #ddeadd;
-$color4hover: #c3cec3;
+$color1: #fcf7c5;
+$textLight: #fffef2;
+$textLightPlaceHolder: #c7c7c7;
+$color2: #1ae0dd;
+$color2hover: #1cb9c7;
+$color3: #ff6c7d;
+$color3hover: #ec4457;
+$color4: #29221f;
 $color5: #eec276;
 $color5hover: #cca664;
 $color6: #1f0e1a;
@@ -22,6 +24,7 @@ body, html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: $color1;
 
 }
 
@@ -55,7 +58,7 @@ body, html {
 
     h2 {
         font-size: 3rem;
-        border-bottom: 3px solid $color1;
+        border-bottom: 3px solid $color2;
         
     }
 
@@ -75,11 +78,11 @@ body, html {
             border: none;
             border-radius: 5px;
 
-            background-color: $color1;
+            background-color: $color3;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             
             &:hover {
-                background-color: $color1;
+                background-color: $color3hover;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.35) 0px 5px 15px;                
 
             }

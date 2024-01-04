@@ -4,6 +4,15 @@ $color2hover: #e0736d;
 $color3: #cdeadc;
 $color4: #ddeadd;
 $color4hover: #c3cec3;
+$color11: #fcf7c5;
+$textLight: #fffef2;
+$textLightPlaceHolder: #c7c7c7;
+$color20: #1ae0dd;
+$color20hover: #13747d;
+$color30: #ff6c7d;
+$color30hover: #ec4457;
+$color40: #29221f;
+$color40hover: #c3cec3;
 $color5: #eec276;
 $color5hover: #cca664;
 $color6: #1f0e1a;
@@ -28,16 +37,18 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: $color11;
 }
 
 #header {
-    border-bottom: 2px solid blue;
-    min-height: 100px;
-    max-height: 15vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    border: 1px solid $color10;
+    box-sizing: border-box;
+
 }
 
 #body {
@@ -45,14 +56,15 @@ body, html {
     align-items: center;
     flex-direction: column;
     flex: 1;
-    background-color: $color7;
 
     padding: 20px;
+    padding-bottom: 15vh;
 
     #title {
         font-size: 1rem;
         text-align: center;
-        color: white;
+        color: $color40;
+        font-weight: bold;
         height: 71px;
         margin: 20px 0px;
     }
@@ -62,7 +74,7 @@ body, html {
         display: flex;
         flex-direction: column;
         margin: auto;
-        background-color: $color1;
+        background-color: $color20;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -108,9 +120,9 @@ body, html {
 
                 &:nth-child(1), &:nth-child(16) {
                     font-weight: bold;
-                    background-color: $color2;
+                    background-color: $color30;
                     &:hover {
-                        background-color: $color2hover;
+                        background-color: $color30hover;
                     }
                 }
 
@@ -135,14 +147,4 @@ body, html {
 
         }
     }
-}
-
-
-#footer {
-    border-top: 2px solid blue;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
