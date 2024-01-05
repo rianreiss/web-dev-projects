@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,21 @@
     <link rel="icon" href="assets/code-square.svg" sizes="any" type="image/svg+xml">
 
 </head>
+
 <body>
     <header id="header">
-        <div>
-            back button
+        <div id="button-container">
+            <button id="back">
+                <img src="assets/code-slash.svg" alt="">
+            </button>
         </div>
-        <div>
-            nav bar button
-            <div id="nav">
+        <div id="nav-container">
+            <div id="nav-button-container">
+                <button id="toggle-nav">
+                    <img src="assets/list.svg" alt="">
+                </button>
+            </div>
+            <div id="nav" class="hidden">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects/calculator/index.html">Calculator</a></li>
@@ -25,7 +33,7 @@
                 </ul>
             </div>
         </div>
-        
+
     </header>
 
     <div id="body">
@@ -58,10 +66,9 @@
             </div>
         </div>
 
-        
-
     </div>
 
     <script src="index/index.js"></script>
 </body>
+
 </html>

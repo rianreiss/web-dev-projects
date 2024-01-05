@@ -48,58 +48,111 @@ html {
     align-items: center;
     justify-content: space-around;
     min-height: 8vh;
-    border: 1px solid $color10;
+    border-bottom: 1px solid $color10;
     box-sizing: border-box;
     color: $textLight;
+    box-shadow: rgba($color10, 0.1) 0px 7px 29px 0px;
 
-    #nav {
-        position: relative;
-        text-align: right;
-
-        ul {
-            right: 0;
-            border: 1px solid $color30hover;
-            background-color: $color40;
-            border-radius: 15px;
-            width: 170px;
-            padding: 20px;
-            box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
-            list-style: none;
-            position: absolute;
-
-            li {
-                a {
-                    display: block;
-                    text-decoration: none;
-                    color: inherit;
-                    border-radius: 6px;
-                    padding: 10px 5px;
-
-                    &:hover {
-                        background-color: $color40hover;
-                        font-weight: bold;
-                        box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
-                    }
-                }
-
-                border-bottom: 2px solid #13747d;
-                display: block;
-                margin-bottom: 15px;
-                list-style: none;
-                color: inherit;
-
-                &:hover {
-                    border-bottom: 2px solid transparent;
-                }
+    #button-container {
 
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
+        #back{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 50%;
+            border: transparent;
+
+            &:hover {
+                background-color: $color40hover;
+            }
+
+
+            img {
+                width: 30px;
+
             }
         }
     }
 
+    #nav-container {
+
+        #nav-button-container {
+
+            button {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background-color: transparent;
+                cursor: pointer;
+                border-radius: 50%;
+                border: transparent;
+
+                &:hover {
+                    background-color: $color40hover;
+                }
+
+                img {
+                    width: 30px;
+
+                }
+            }
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        #nav {
+            position: relative;
+            text-align: right;
+
+            ul {
+                right: 0;
+                border: 1px solid $color30hover;
+                background-color: $color40;
+                border-radius: 15px;
+                width: 170px;
+                padding: 20px;
+                box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
+                list-style: none;
+                position: absolute;
+                margin-top: 6px;
+
+                li {
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: inherit;
+                        border-radius: 6px;
+                        padding: 10px 5px;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: $color40hover;
+                            box-shadow: rgba($color30, 0.2) 0px 7px 29px 0px;
+                        }
+                    }
+
+                    border-bottom: 2px solid #13747d;
+                    display: block;
+                    margin-bottom: 15px;
+                    list-style: none;
+                    color: inherit;
+
+                    &:hover {
+                        border-bottom: 2px solid transparent;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #body {

@@ -23,15 +23,49 @@ html {
   align-items: center;
   justify-content: space-around;
   min-height: 8vh;
-  border: 1px solid #5cceee;
+  border-bottom: 1px solid #5cceee;
   box-sizing: border-box;
   color: #fffef2;
+  box-shadow: rgba(92, 206, 238, 0.1) 0px 7px 29px 0px;
 }
-#header #nav {
+#header #button-container #back {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: transparent;
+}
+#header #button-container #back:hover {
+  background-color: #463934;
+}
+#header #button-container #back img {
+  width: 30px;
+}
+#header #nav-container #nav-button-container button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: transparent;
+}
+#header #nav-container #nav-button-container button:hover {
+  background-color: #463934;
+}
+#header #nav-container #nav-button-container button img {
+  width: 30px;
+}
+#header #nav-container .hidden {
+  display: none;
+}
+#header #nav-container #nav {
   position: relative;
   text-align: right;
 }
-#header #nav ul {
+#header #nav-container #nav ul {
   right: 0;
   border: 1px solid #ec4457;
   background-color: #29221f;
@@ -41,30 +75,31 @@ html {
   box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
   list-style: none;
   position: absolute;
+  margin-top: 6px;
 }
-#header #nav ul li {
+#header #nav-container #nav ul li {
   border-bottom: 2px solid #13747d;
   display: block;
   margin-bottom: 15px;
   list-style: none;
   color: inherit;
 }
-#header #nav ul li a {
+#header #nav-container #nav ul li a {
   display: block;
   text-decoration: none;
   color: inherit;
   border-radius: 6px;
   padding: 10px 5px;
-}
-#header #nav ul li a:hover {
-  background-color: #463934;
   font-weight: bold;
+}
+#header #nav-container #nav ul li a:hover {
+  background-color: #463934;
   box-shadow: rgba(255, 108, 125, 0.2) 0px 7px 29px 0px;
 }
-#header #nav ul li:hover {
+#header #nav-container #nav ul li:hover {
   border-bottom: 2px solid transparent;
 }
-#header #nav ul li:last-child {
+#header #nav-container #nav ul li:last-child {
   margin-bottom: 0;
 }
 
