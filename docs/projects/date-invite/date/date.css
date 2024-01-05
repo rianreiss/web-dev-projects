@@ -14,9 +14,87 @@ body, html {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 8vh;
-  border: 1px solid #5cceee;
+  min-height: 8vh;
+  border-bottom: 1px solid #5cceee;
   box-sizing: border-box;
+  color: #fffef2;
+  box-shadow: rgba(92, 206, 238, 0.1) 0px 7px 29px 0px;
+}
+#header #button-container #back {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: transparent;
+}
+#header #button-container #back:hover {
+  background-color: #87eff8;
+}
+#header #button-container #back img {
+  width: 30px;
+}
+#header #nav-container #nav-button-container button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: transparent;
+}
+#header #nav-container #nav-button-container button:hover {
+  background-color: #87eff8;
+}
+#header #nav-container #nav-button-container button img {
+  width: 30px;
+}
+#header #nav-container .hidden {
+  display: none;
+}
+#header #nav-container #nav {
+  position: relative;
+  text-align: right;
+  color: #29221f;
+  z-index: 100;
+}
+#header #nav-container #nav ul {
+  right: 0;
+  border: 1px solid #5cceee;
+  background-color: #fcf7c5;
+  border-radius: 15px;
+  width: 170px;
+  padding: 20px;
+  box-shadow: rgba(135, 239, 248, 0.7) 0px 7px 29px 0px;
+  list-style: none;
+  position: absolute;
+  margin-top: 6px;
+}
+#header #nav-container #nav ul li {
+  border-bottom: 2px solid #1ae0dd;
+  display: block;
+  margin-bottom: 15px;
+  list-style: none;
+  color: inherit;
+}
+#header #nav-container #nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+#header #nav-container #nav ul li a:hover {
+  background-color: #87eff8;
+  box-shadow: rgba(26, 224, 221, 0.7) 0px 7px 29px 0px;
+}
+#header #nav-container #nav ul li:hover {
+  border-bottom: 2px solid transparent;
+}
+#header #nav-container #nav ul li:last-child {
+  margin-bottom: 0;
 }
 
 #body {
@@ -29,9 +107,13 @@ body, html {
   gap: 3%;
   padding-bottom: 15vh;
 }
+#body #couple {
+  display: none;
+}
 #body img {
   width: 200px;
   filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.5));
+  z-index: 1;
 }
 #body h2 {
   font-size: 3rem;

@@ -12,21 +12,21 @@ function clean() {
 function back() {
     // "backspace" apaga 1 item do display
     var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero.substring(0, numero.length -1);
+    document.getElementById('resultado').innerHTML = numero.substring(0, numero.length - 1);
 }
 
 function calcular() {
     // faz o calculo com a operação do display
     var numero = document.getElementById('resultado').innerHTML;
 
-    if(numero) {
+    if (numero) {
         document.getElementById('resultado').innerHTML = eval(numero);
     } else {
         document.getElementById('resultado').innerHTML = "...";
     }
 }
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     // Verifica se a tecla pressionada é um número de 0 a 9
     if (event.key >= '0' && event.key <= '9') {
         insert(event.key);
@@ -42,4 +42,30 @@ document.addEventListener('keydown', function(event) {
     } else if (event.key === 'Backspace') {
         back();
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.getElementById('nav');
+    const back = document.getElementById('back');
+    const toggleButton = document.getElementById('toggle-nav');
+
+    // Mostrar/ocultar a barra de navegação ao clicar no botão
+    toggleButton.addEventListener('click', function () {
+        navbar.classList.toggle('hidden');
+    });
+
+    // Ocultar a barra de navegação quando clicar fora dela
+    document.addEventListener('click', function (event) {
+        const isClickInsideNavbar = navbar.contains(event.target);
+        const isClickInsideToggleButton = toggleButton.contains(event.target);
+
+        if (!isClickInsideNavbar && !isClickInsideToggleButton) {
+            navbar.classList.add('hidden');
+        }
+    });
+
+    back.addEventListener('click', function () {
+        window.history.back();
+    });
+
 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +10,50 @@
     <link rel="icon" href="date/calendar-heart-fill.svg" sizes="any" type="image/svg+xml">
 
 </head>
+
 <body>
     <header id="header">
-        <div>
-            back button
+        <div id="button-container">
+            <button id="back">
+                <img src="date/arrow-left.svg" alt="">
+            </button>
         </div>
-        <div>
-            nav bar button
+        <div id="nav-container">
+            <div id="nav-button-container">
+                <button id="toggle-nav">
+                    <img src="date/list.svg" alt="">
+                </button>
+            </div>
+            <div id="nav" class="hidden">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../calculator/index.html">Calculator</a></li>
+                    <li><a href="../date-invite/index.html">Date Invite</a></li>
+                    <li><a href="../guess-number/index.html">Guess the Number</a></li>
+                </ul>
+            </div>
         </div>
+
     </header>
+
+    </header>
+
 
     <div id="body">
 
-        <img src="date/bear.png" alt="">
-        
-        <h2>Wanna date me? s2</h2>
+        <img id="bear" src="date/bear.png" alt="">
+        <img id="couple" src="date/couple.png" alt="">
 
-        <div>
+        <h2 id="text">Wanna date me? s2</h2>
+
+        <div id="buttons">
             <button onclick="yes()">Yes :)</button>
-            <button onmouseover="dodge(this)" >No :(</button>
+            <button onmouseover="dodge(this)">No :(</button>
         </div>
 
     </div>
 
     <script src="date/date.js"></script>
 </body>
+
 </html>

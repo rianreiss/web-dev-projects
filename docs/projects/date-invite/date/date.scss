@@ -2,10 +2,11 @@ $color1: #fcf7c5;
 $textLight: #fffef2;
 $textLightPlaceHolder: #c7c7c7;
 $color2: #1ae0dd;
-$color2hover: #1cb9c7;
+$color2hover: #87eff8;
 $color3: #ff6c7d;
 $color3hover: #ec4457;
 $color4: #29221f;
+$color4hover: #463934;
 $color5: #eec276;
 $color5hover: #cca664;
 $color6: #1f0e1a;
@@ -33,10 +34,114 @@ body, html {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 8vh;
-    border: 1px solid $color10;
+    min-height: 8vh;
+    border-bottom: 1px solid $color10;
     box-sizing: border-box;
+    color: $textLight;
+    box-shadow: rgba($color10, 0.1) 0px 7px 29px 0px;
 
+    #button-container {
+
+
+        #back{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 50%;
+            border: transparent;
+
+            &:hover {
+                background-color: $color2hover;
+            }
+
+
+            img {
+                width: 30px;
+
+            }
+        }
+    }
+
+    #nav-container {
+
+        #nav-button-container {
+
+            button {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background-color: transparent;
+                cursor: pointer;
+                border-radius: 50%;
+                border: transparent;
+
+                &:hover {
+                    background-color: $color2hover;
+                }
+
+                img {
+                    width: 30px;
+
+                }
+            }
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        #nav {
+            position: relative;
+            text-align: right;
+            color: $color4;
+            z-index: 100;
+
+            ul {
+                right: 0;
+                border: 1px solid $color10;
+                background-color: $color1;
+                border-radius: 15px;
+                width: 170px;
+                padding: 20px;
+                box-shadow: rgba($color2hover, 0.7) 0px 7px 29px 0px;
+                list-style: none;
+                position: absolute;
+                margin-top: 6px;
+
+                li {
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: inherit;
+                        border-radius: 6px;
+                        padding: 10px 5px;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: $color2hover;
+                            box-shadow: rgba($color2, 0.7) 0px 7px 29px 0px;
+                        }
+                    }
+
+                    border-bottom: 2px solid $color2;
+                    display: block;
+                    margin-bottom: 15px;
+                    list-style: none;
+                    color: inherit;
+
+                    &:hover {
+                        border-bottom: 2px solid transparent;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #body {
@@ -50,10 +155,15 @@ body, html {
 
     padding-bottom: 15vh;
 
+    #couple {
+        display: none;
+    }
+
     img {
         width: 200px;
         filter: drop-shadow(0px 5px 15px
         rgba(0, 0, 0, 0.5));
+        z-index: 1;
     }
 
     h2 {
