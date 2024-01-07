@@ -1,15 +1,39 @@
 @media screen and (max-height: 850px) {
-  #header {
-    border-bottom: 2px solid blue;
-    min-height: 50px;
-    max-height: 5vh;
+  #header #button-container #back {
+    padding: 8px;
+  }
+  #header #button-container #back img {
+    width: 20px;
+  }
+  #header #nav-container #nav-button-container button {
+    padding: 8px;
+  }
+  #header #nav-container #nav-button-container button img {
+    width: 20px;
+  }
+  #header #nav-container .hidden {
+    display: none;
+  }
+  #header #nav-container #nav ul {
+    width: 150px;
+    padding: 15px;
+    margin-top: 3px;
+  }
+  #header #nav-container #nav ul li {
+    border-bottom: 1px solid #13747d;
+    margin-bottom: 10px;
+  }
+  #header #nav-container #nav ul li a {
+    font-size: 0.8em;
+  }
+  #header #nav-container #nav ul li:hover {
+    border-bottom: 1px solid transparent;
   }
   #body {
     padding: 20px 30px;
   }
   #body #title {
     text-align: center;
-    color: black;
     height: -moz-fit-content;
     height: fit-content;
     margin: 10px 0px;

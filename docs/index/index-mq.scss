@@ -4,11 +4,20 @@ $color2hover: #e0736d;
 $color3: #cdeadc;
 $color4: #ddeadd;
 $color4hover: #c3cec3;
+$color11: #fcf7c5;
+$textLight: #fffef2;
+$textLightPlaceHolder: #c7c7c7;
+$color20: #1ae0dd;
+$color20hover: #13747d;
+$color30: #ff6c7d;
+$color30hover: #ec4457;
+$color40: #29221f;
+$color40hover: #463934;
 $color5: #eec276;
 $color5hover: #cca664;
 $color6: #1f0e1a;
 $color7: #ff5d80;
-$color7hover: #f14e71;
+$color7hover: #ff5d80;
 
 $color8: #cacaca;
 $color9: #24c0eb;
@@ -16,9 +25,59 @@ $color10: #5cceee;
 
 @media screen and (max-height: 850px) {
     #header {
-        border-bottom: 2px solid blue;
-        min-height: 50px;
-        max-height: 5vh;
+
+        #button-container {
+
+            #back {
+                padding: 8px;
+
+                img {
+                    width: 20px;
+
+                }
+            }
+        }
+
+        #nav-container {
+
+            #nav-button-container {
+
+                button {
+                    padding: 8px;
+
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            #nav {
+
+                ul {
+                    width: 150px;
+                    padding: 15px;
+                    margin-top: 3px;
+
+                    li {
+
+                        border-bottom: 1px solid #13747d;
+                        margin-bottom: 10px;
+
+                        a {
+                            font-size: 0.8em;
+                        }
+
+                        &:hover {
+                            border-bottom: 1px solid transparent;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #body {
@@ -29,18 +88,17 @@ $color10: #5cceee;
                 font-size: 0.8em;
                 margin: 0;
             }
+
             text-align: center;
-            color: black;
             height: fit-content;
             margin: 10px 0px;
         }
     }
-
-
 }
-    
-    
+
+
 @media screen and (min-width: 600px) {
+
     /* Ajustes para tablets */
     #body {
         padding: 30px 30px;
@@ -52,22 +110,23 @@ $color10: #5cceee;
 
         #big-container {
             padding: 10px;
-    
-            #container-title{
+
+            #container-title {
                 margin-top: 2.5%;
                 font-size: 2rem;
             }
-    
+
             #container {
                 padding: 18px;
             }
         }
     }
-    
+
 }
 
 @media screen and (min-width: 1024px) {
-/* Ajustes para desktops */
+
+    /* Ajustes para desktops */
     #body {
         padding: 30px 30px;
 
@@ -78,7 +137,7 @@ $color10: #5cceee;
         #big-container {
             padding: 10px;
 
-            #container-title{
+            #container-title {
                 margin-top: 20px;
                 font-size: 2.5rem;
                 padding-bottom: 15px;
