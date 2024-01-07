@@ -119,6 +119,9 @@ body, html {
   font-size: 3rem;
   border-bottom: 3px solid #1ae0dd;
 }
+#body #buttons {
+  z-index: 5;
+}
 #body div {
   width: 210px;
   display: flex;

@@ -172,6 +172,10 @@ body, html {
         
     }
 
+    #buttons {
+        z-index: 5;
+    }
+
     div {
         width: 210px;
         display: flex;
