@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   back.addEventListener('click', function () {
-    window.location.href = 'index.html';
+    window.location.href = 'https://github.com/rianreiss/web-dev-projects';
   });
 
 });
