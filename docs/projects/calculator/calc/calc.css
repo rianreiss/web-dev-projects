@@ -144,6 +144,11 @@ body, html {
   text-align: right;
   font-size: 2rem;
   margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 204px;
+  justify-content: end;
+  overflow: hidden;
 }
 #body #calculator-box #buttons-container {
   display: grid;
