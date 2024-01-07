@@ -27,7 +27,8 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    min-width: 450px;;
+    min-width: 450px;
+    ;
     background-color: $color1;
 
 }
@@ -46,7 +47,7 @@ html {
     #button-container {
 
 
-        #back{
+        #back {
             display: flex;
             align-items: center;
             padding: 10px;
@@ -91,7 +92,7 @@ html {
             }
         }
 
-        .hidden{
+        .hidden {
             display: none;
         }
 
@@ -185,7 +186,7 @@ p {
         justify-content: space-around;
         flex-direction: column;
         font-weight: bold;
-        
+
         background-color: $color2;
 
         border: 3px solid $color2hover;
@@ -197,7 +198,7 @@ p {
             position: relative;
             gap: 15px;
             padding-bottom: 10px;
-            
+
 
             select {
                 font-size: 1rem;
@@ -205,11 +206,7 @@ p {
             }
 
         }
-
-        #info {
-        }
-
-
+        
         #game {
             display: none;
             grid-template-columns: repeat(2, auto);
@@ -220,7 +217,7 @@ p {
             #input {
                 background-color: $color4;
                 color: $textLight;
-                
+
                 border: none;
                 border-bottom: 3px solid $color3;
                 width: 70px;

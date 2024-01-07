@@ -26,6 +26,7 @@ function start() {
         settings.textContent = `You're guessing a number in range 1 to ${selectedValue}`;
         range.style.display = 'none';
         settings.style.borderBottom = '3px solid ' + '#fc354c';
+        settings.style.textAlign = 'center';
 
         
         output.innerHTML = 'Can you guess it?';

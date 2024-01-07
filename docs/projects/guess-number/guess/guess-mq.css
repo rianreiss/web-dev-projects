@@ -1,1 +1,86 @@
-/*# sourceMappingURL=guess-mq.css.map */
+@media screen and (max-height: 850px) {
+  #header #button-container #back {
+    padding: 8px;
+  }
+  #header #button-container #back img {
+    width: 20px;
+  }
+  #header #nav-container #nav-button-container button {
+    padding: 8px;
+  }
+  #header #nav-container #nav-button-container button img {
+    width: 20px;
+  }
+  #header #nav-container .hidden {
+    display: none;
+  }
+  #header #nav-container #nav ul {
+    width: 150px;
+    padding: 15px;
+    margin-top: 3px;
+  }
+  #header #nav-container #nav ul li {
+    border-bottom: 1px solid #13747d;
+    margin-bottom: 10px;
+  }
+  #header #nav-container #nav ul li a {
+    font-size: 0.8em;
+  }
+  #header #nav-container #nav ul li:hover {
+    border-bottom: 1px solid transparent;
+  }
+  #body {
+    padding-bottom: 10vh;
+  }
+  #body #container {
+    width: 280px;
+    height: 350px;
+    padding: 15px 5px;
+  }
+  #body #container #settings {
+    gap: 10px;
+    padding-bottom: 5px;
+    text-align: end;
+    padding: 5px;
+  }
+  #body #container #game {
+    display: none;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 70px 35px;
+    align-items: center;
+  }
+  #body #container #game #input {
+    background-color: #29221f;
+    color: #fffef2;
+    border: none;
+    border-bottom: 3px solid #fc354c;
+    width: 70px;
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 1em;
+  }
+  #body #container #game #input::-moz-placeholder {
+    color: #c7c7c7;
+  }
+  #body #container #game #input::placeholder {
+    color: #c7c7c7;
+  }
+  #body #container #game #btn {
+    font-size: 1.2em;
+  }
+  #body #container #game *:last-child {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+  }
+  #body #container div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  #body #container div:last-child button {
+    display: none;
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=guess-mq.css.map */
