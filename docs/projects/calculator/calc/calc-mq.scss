@@ -26,9 +26,59 @@ $color10: #5cceee;
 
 @media screen and (max-height: 850px) {
     #header {
-        border-bottom: 2px solid blue;
-        min-height: 50px;
-        max-height: 5vh;
+
+        #button-container {
+
+            #back {
+                padding: 8px;
+
+                img {
+                    width: 20px;
+
+                }
+            }
+        }
+
+        #nav-container {
+
+            #nav-button-container {
+
+                button {
+                    padding: 8px;
+
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            #nav {
+
+                ul {
+                    width: 150px;
+                    padding: 15px;
+                    margin-top: 3px;
+
+                    li {
+
+                        border-bottom: 1px solid #13747d;
+                        margin-bottom: 10px;
+
+                        a {
+                            font-size: 0.8em;
+                        }
+
+                        &:hover {
+                            border-bottom: 1px solid transparent;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #body {
@@ -44,23 +94,15 @@ $color10: #5cceee;
         }
 
         #calculator-box {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            background-color: $color1;
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+
             #view {
                 border-bottom: 2px solid rgba($color6, 0.4);
                 padding: 10px 20px;
                 height: 25px;
-
-                margin: 20px;
-                margin-bottom: 0;
     
                 #resultado {
                     font-size: 1.6rem;
+                    max-width: 204px;
                 }
             }
     
@@ -78,15 +120,6 @@ $color10: #5cceee;
     
             }
         }
-    }
-
-    #footer {
-        border-top: 2px solid blue;
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
