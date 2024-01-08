@@ -1,21 +1,21 @@
 # Web-Dev Projects
-This repo contains 3 web projects: Calculator, Date Invite, Guess the Number.
+Esse repositorio contém 3 projetos web: Calculadora, Pedido de Namoro, Adivinhe o Número.
 
-Use it by clicking the **GitHub Pages link** below.
+Use clicando no Link do **GitHub Pages** abaixo.
 
 - [Web-Dev Projects](https://rianreiss.github.io/web-dev-projects/)
 
-## Calculator (_[link](https://rianreiss.github.io/web-dev-projects/projects/calculator/index.html)_)
-A simple math operations calculator.
+## Calculadora (_[link](https://rianreiss.github.io/web-dev-projects/projects/calculator/index.html)_)
+Uma calculadora de operações matemáticas simples.
 
-## Date Invite (_[link](https://rianreiss.github.io/web-dev-projects/projects/date-invite/index.html)_)
-A date invite that can't be refused.
+## Pedido de Namoro (_[link](https://rianreiss.github.io/web-dev-projects/projects/date-invite/index.html)_)
+Um pedido de namoro que não pode ser recusado.
 
-## Guess the Number (_[link](https://rianreiss.github.io/web-dev-projects/projects/guess-number/index.html)_)
-A number guessing game that the user has to pick a number, between 1 to 100 or 1 to 1000.
+## Adivinhe o número (_[link](https://rianreiss.github.io/web-dev-projects/projects/guess-number/index.html)_)
+Um jogo de advinhar um número no qual o usuário deve escolher um valor dentro do intervalo de **1 a 100** ou **1 a 1000**.
 
-## Techs
-All these projects uses these techs:
+## Tecnologias
+Todos esses projetos foram desenvolidos utilizando essas tecnologias:
 - HTML
 - Sass (CSS)
 - JavaScript

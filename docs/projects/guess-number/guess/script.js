@@ -16,20 +16,20 @@ function start() {
 
     if (selectedValue === 0) {
 
-        alert('Please, select the range you want to play.');
+        alert('Por favor, selecione a variação que você quer jogar.');
 
     } else {
 
         let reset = document.getElementById('reset');
         reset.style.display = 'block'; // showing the reset button
         document.getElementById('start').style.display = 'none';
-        settings.textContent = `You're guessing a number in range 1 to ${selectedValue}`;
+        settings.textContent = `Você está adivinhando um número de 1 a ${selectedValue}`;
         range.style.display = 'none';
         settings.style.borderBottom = '3px solid ' + '#fc354c';
         settings.style.textAlign = 'center';
 
         
-        output.innerHTML = 'Can you guess it?';
+        output.innerHTML = 'Consegue adivinhar?';
         
         gameDisplay.style.display = 'grid';
 
@@ -62,34 +62,34 @@ btn.addEventListener('click', function() {
     let inputV = document.getElementById('input').value;
 
     if (isNaN(inputV)){
-        alert(`Please, insert a valid number.`);
+        alert(`Por favor, selecione um número válido.`);
         limparInput(inputV);
 
     } else if (inputV < 1 || inputV > selectedValue) {
-        alert(`Please, insert a number in range 1 to ${selectedValue}.`);
+        alert(`Por favor, selecione um valor de 1 a ${selectedValue}.`);
         limparInput(inputV);
 
     } else if (numeros.includes(inputV)) {
-        alert(`You already guessed that number.`);
+        alert(`Você já tentou esse número.`);
         limparInput(inputV);
     } else {
         attemps++;
         if (inputV == number) {
-            output.innerHTML = `You won!! (${number})`;
+            output.innerHTML = `Você venceu!! (${number})`;
             input.select();
             numeros = [];
             btn.disabled = true;    
         } else if (inputV < number) {
-            output.innerHTML = 'Higher than that.';
+            output.innerHTML = 'Maior que isso.';
             numeros.push(inputV);
             limparInput(inputV);
         } else {
-            output.innerHTML = 'Lower than that.';
+            output.innerHTML = 'Menor que isso.';
             numeros.push(inputV);
             limparInput(inputV);
         }
         let guesses = document.getElementById('guesses');
-        guesses.innerHTML = `Guesses: ${attemps}`;
+        guesses.innerHTML = `Tentativas: ${attemps}`;
     }
 });
 
@@ -97,7 +97,7 @@ function limparInput(newHolder) {
     let input = document.getElementById('input');
     input.value = "";
     input.focus();
-    input.placeholder = `Last: ${newHolder}`;
+    input.placeholder = `Atual: ${newHolder}`;
 }
 
 function resetarPagina() {

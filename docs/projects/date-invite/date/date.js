@@ -8,7 +8,7 @@ function yes() {
 
     bear.style.display = 'none';
     couple.style.display = 'block';
-    text.innerHTML = 'Luv u bae <3';
+    text.innerHTML = 'Te amo amor <3';
     buttons.style.display = 'none';
 }
 
