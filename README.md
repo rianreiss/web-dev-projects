@@ -22,5 +22,4 @@ Todos esses projetos foram desenvolidos utilizando essas tecnologias:
 
 ##
 
-_Veja no LinkedIn_
-[Link](https://www.linkedin.com/posts/riancarvalhoreis_javascript-sass-css-activity-7150290897081999360-gpJC?utm_source=share&utm_medium=member_desktop)
+_Veja no [LinkedIn](https://www.linkedin.com/posts/riancarvalhoreis_javascript-sass-css-activity-7150290897081999360-gpJC?utm_source=share&utm_medium=member_desktop)_
